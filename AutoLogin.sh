@@ -34,7 +34,7 @@ Usage: `basename $1` -u <Username> -c <Session Name> -b <Instance Base URL> -h <
             The test username to log in with.
         -c  Session Cookie Name
             The name of the Session Cookie.
-        -b  NPAC Instance Base URL
+        -b  Instance Base URL
             The Base URL for the instance, URL and region.
         -h  GUI Manager Host
             The GUI Manager Host
@@ -298,7 +298,7 @@ function logoffUser {
 
   ## Verify Logoff CURL request
 
-  log "NPAC Logoff Result: '$logoffResult'"
+  log "Logoff Result: '$logoffResult'"
 
   if [ $logoffExitStatus -ne 0 ]; then
     log "Logoff failed due to CURL error."
